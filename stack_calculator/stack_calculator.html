@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stack Calculator</title>
+        <script type="text/javascript" src="stack_calculator.js"></script>
+        <link rel="stylesheet" href="stack_calculator.css" />
+    </head>
+    <body>
+        <center>
+        <h1>Stack Calculator</h1><p>
+        <form class="calcForm" name="calculator">
+           <div class="calcInput">			
+                Input:
+                <br>
+                <input type="text" class="calcEntry" id="entry" maxlength="5" size="5"/>
+           </div>
+           <div class="calcStack">
+                Stack:
+                <br>
+                <textarea readonly id="stack"  rows="15" cols="5" ></textarea>
+            </div>
+            <div class="calcRow">
+                <input type="button" class="calcButton" value="push" onclick="pushButton()" />
+                <br>
+                <input type="button" class="calcButton" value="pop" onclick="popButton()" />
+                <br>
+                <input type="button" class="calcButton" value="clear" onclick="init()" />
+                <br>
+                <input type="image" class="calcButton" src="step.png" style="width:45px;" onclick="calc_one(); return false;" />
+            </div>
+        </form>
+        </center>
+    </body>
+</html>
